@@ -123,24 +123,30 @@ span {
 /* Panel */
 
 .panel {
-    height: 40px;
+    flex: auto;
+    flex-direction: column;
+    height: 30px;
     background-color: #233242;
-    display: flex;
+    padding-top: 10px;
+    padding-left: 10px;
+    /* display: flex; */
     color: white;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .panel p {
+    flex: auto;
     display: inline;
-    margin-left: 15px;
+    align-items: left;
+    margin-left: 20px;
 }
 
-.panel-ops {
-    width: 70%;
-    font-size: 0.85rem;
-    margin-left: -70px;
-}
+
+/* .panel-ops {
+    flex: content;
+    display: inline;
+} */
 
 .panel-deals {
     font-size: 0.9rem;
